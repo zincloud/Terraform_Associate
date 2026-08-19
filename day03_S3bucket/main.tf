@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 # Create a S3 bucket
-resource "aws_s3_bucket" "tf_test_baivab_bucket" {
+resource "aws_s3_bucket" "tf_test_baivab_bucket_1" {
   bucket = "my-tf-test-baiv-bucket-test1"
 
   tags = {
@@ -21,7 +21,7 @@ resource "aws_s3_bucket" "tf_test_baivab_bucket" {
     Environment = "Dev"
   }
 }
-resource "aws_s3_bucket" "tf_test_baivab_bucket" {
+resource "aws_s3_bucket" "tf_test_baivab_bucket_2" {
   bucket = "my-tf-test-baiv-bucket-test2"
 
   tags = {
