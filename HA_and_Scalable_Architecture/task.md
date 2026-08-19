@@ -24,6 +24,7 @@ Infrastructure spans multiple Availability Zones with automatic scaling.
 Internet → ALB (Public) → EC2 Instances (Private) → NAT Gateways → Internet
                                ↓
                         Django Docker App
+```
 ---
 ## 🧩 Components
 - **VPC:** 10.0.0.0/16 across 2 AZs (us-east-1a, us-east-1b)  
@@ -47,6 +48,7 @@ code/
 ├── s3.tf                # S3 bucket (optional)
 └── scripts/
 └── user_data.sh     # EC2 initialization script
+```
 ---
 ### **Deploy**
 ```bash
