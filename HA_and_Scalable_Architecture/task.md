@@ -20,6 +20,7 @@ Infrastructure spans multiple Availability Zones with automatic scaling.
 - **Infrastructure as Code:** Fully automated with Terraform  
 ---
 ## 🏗️ Architecture
+```md
 Internet → ALB (Public) → EC2 Instances (Private) → NAT Gateways → Internet
                                ↓
                         Django Docker App
@@ -34,6 +35,7 @@ Internet → ALB (Public) → EC2 Instances (Private) → NAT Gateways → Inter
 - **Container:** `itsbaivab/django-app` (Port 8000 → 80)  
 ---
 ## 📁 Code Structure
+```md
 code/
 ├── main.tf              # Provider & Terraform configuration
 ├── variables.tf         # Input variables
@@ -52,7 +54,7 @@ cd code/
 terraform init
 terraform plan
 terraform apply -auto-approve
-
+```
 Deployment takes ~5-8 minutes.
 
 
